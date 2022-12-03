@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        h2 {
+            display: flex;
+            margin: auto;
+            width: 35%;
+            font-size: 100px;
+            color: transparent;
+            margin-top: 75px;
+        }
+
+        h2 span {
+            font-family: Kaushan Script;
+            animation: animate 3s linear infinite;
+            animation-delay: calc(0.1s * var(--i));
+        }
+
+        @keyframes animate {
+            0% {
+                color: #fff;
+                filter: blur(2px) hue-rotate(0deg);
+                text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+            }
+
+            30%,
+            70% {
+                color: #fff;
+                filter: blur(2px) hue-rotate(360deg);
+                text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff;
+            }
+
+            100% {
+                color: transparent;
+                box-shadow: none;
+                filter: blur(2px) hue-rotate(0deg);
+            }
+        }
+
+        .toall {
+            color: red;
+            font-size: 50px;
+            margin: auto;
+            width: 59%;
+            padding: 33px;
+            font-family: Dancing Script;
+        }
+
+        .toall span {
+            text-shadow: 0 5px 50px black,
+                0 0 100px black,
+                0 0 150px black,
+                0 0 200px black,
+                0 0 250px black;
+            animation: animatee 3s linear infinite;
+        }
+        @keyframes animatee {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+        .box{
+            font-family: 'Permanent Marker', cursive;
+            border:5px solid red;
+            color:white;
+            width:24%;
+            margin:auto;
+            font-size: 20px;
+            padding:15px;
+            border-radius:20px ;
+            animation: animater 10s linear infinite;
+        }
+        @keyframes animater {
+            0%{
+                background: green;
+            }
+            20%{
+                background: aqua;
+            }
+            40%{
+                background: rgb(228, 10, 217);
+            }
+            60%{
+                background: gray;
+            }
+            80%{
+                background: rgb(238, 115, 6);
+            }
+            100%{
+                background: rgb(18, 13, 13);
+            }
+        }
+        .navbar{
+            display: flex;
+            padding-top: 85px;
+        }
+        .mid{
+            margin-left: 337px;    
+        }
+        .right{
+            margin-left: 404px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        <span style="--i:1;">H</span>
+        <span style="--i:2;">a</span>
+        <span style="--i:3;">p</span>
+        <span style="--i:4;">p</span>
+        <span style="--i:5;">y</span>
+        <span style="--i:7; margin-left: 5px;">D</span>
+        <span style="--i:8;">i</span>
+        <span style="--i:9;">w</span>
+        <span style="--i:10;">a</span>
+        <span style="--i:11;">l</span>
+        <span style="--i:12;">i</span>
+    </h2>
+    <div class="toall"><span>To you and to your all near and dear ones</span></div>
+    <div class="box"><span>Share to your near and dear one</span></div>
+    <div class="navbar">
+        <div class="left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr-Q3vbnUbwlveJul5Mbqd2LLdp-RGIToWxw&usqp=CAU" alt=""></div>
+        <div class="mid"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe5INHjkVCUDF3N6xMdhdd1aQJZ37qE4G7kQ&usqp=CAU" alt=""></div>
+        <div class="right"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_cpWMB69AZrlu2ShhJsv2hke1UbY_AevIBA&usqp=CAU" alt=""></div>
+    </div>
+</body>
+
+</html>
